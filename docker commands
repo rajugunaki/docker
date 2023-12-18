@@ -64,3 +64,11 @@ docker run --restart unless-stopped <your-container-options>
 docker cp ./filename container_id:/path/to/container/
 Example:
 docker cp ./Dockerfile b44eb1aab2dd:/usr/local/tomcat/temp/
+
+Copy a local file into container
+
+ docker cp ./some_file CONTAINER:/work
+Copy files from container to local path
+
+content_copy
+ docker cp CONTAINER:/var/logs/ /tmp/app_logs
